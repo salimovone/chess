@@ -38,13 +38,13 @@ const Character = (props: Props): JSX.Element => {
       className={
         props.code === 3
           ? "hidden"
-          : `flex justify-center items-center border rounded-full w-full h-full p-3 ${
+          : `flex justify-center items-center border rounded-full w-full h-full p-2 ${
               thisSelected ? "border-red-700 border-4" : ""
-            }` + `${props.code === 2 ? " bg-white " : " bg-black "}`
+            }` + `${props.code === 2 ? " bg-white " : " bg-[#121212] "}`
       }
     >
       <div className="flex justify-center items-center border-2 border-gray-600 rounded-full w-full h-full">
-        <div className="w-5 h-5 rounded-full bg-gray-600"></div>
+        <div className=" h-2 w-2 rounded-full bg-gray-600"></div>
       </div>
     </div>
   );

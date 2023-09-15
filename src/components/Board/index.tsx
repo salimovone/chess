@@ -1,5 +1,5 @@
 import { useAppSelector } from "../../redux/store";
-import { characterCode } from "../../types";
+import type { characterCode } from "../../types";
 import Square from "../Square";
 
 const Board = (): JSX.Element => {

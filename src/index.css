@@ -2,7 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
-    --light: #ffffff;
-    --dark: #4e4848;
+  --light: #ffffff;
+  --dark: #777777;
+  --width: calc(100vw / 8);
+  --height: var(--width);
+}
+
+@media screen and (min-width: 800px) {
+  :root {
+    --width: 5rem;
+    --height: 5rem;
+  }
+}
+
+.square{
+    width: var(--width);
+    height: var(--height);
 }
